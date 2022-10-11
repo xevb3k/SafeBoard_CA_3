@@ -1,3 +1,43 @@
+CREATE TABLE ap_urls (
+    id int,
+    url varchar(255),
+    created varchar(255),
+    src int,
+    domain varchar(255),
+    u_id int
+);
+
+INSERT INTO ap_urls
+VALUES (126323999, 'gen.es/docs', '2022', 5, 'gen.es', 58);
+INSERT INTO ap_urls
+VALUES (129089397, 'bvchostal.cn/2329a1/', '2010', 5, 'bvchostal.cn', 58);
+INSERT INTO ap_urls
+VALUES (128593650, 'shark-ap.digital.app/exmpl01', '2018', 5, 'shark-ap.digital.app', 11);
+
+CREATE TABLE ap_lbl2url (
+    url_id int,
+    lav_id int
+);
+
+
+INSERT INTO ap_lbl2url
+VALUES (126323999, 63);
+INSERT INTO ap_lbl2url
+VALUES (126323999, 960);
+INSERT INTO ap_lbl2url
+VALUES (126323999, 1060);
+INSERT INTO ap_lbl2url
+VALUES (129089397, 63);
+INSERT INTO ap_lbl2url
+VALUES (129089397, 960);
+INSERT INTO ap_lbl2url
+VALUES (129089397, 1060);
+INSERT INTO ap_lbl2url
+VALUES (128593650, 1114);
+INSERT INTO ap_lbl2url
+VALUES (128593650, 14200);
+
+
 CREATE TABLE ap_lbl_attr_val (
     label_id int,
     attr_id int,
